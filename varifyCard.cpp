@@ -13,7 +13,7 @@ int main()
 
 	for(int counter = 7; counter > 0; counter--)
 	{
-		digit[counter] = cardNum/pow(10,counter)%10;
+		digit[counter] =(int)(cardNum/pow(10.0,counter)) % 10;
 		cout << digit[counter];
 
 	}
