@@ -26,7 +26,7 @@ int main()
 			cout << "your height may be higher than 5ft\n ";
 			break;
 		case 5:
-			if(inches >= 0 || inches << 12)
+			if(inches >= 0 || inches < 12)
 			{
 				weight = inches * 5 + 110;		
 			}//if
@@ -35,7 +35,7 @@ int main()
 		case 7:
 		case 8:
 		case 9:
-			if(inches >= 0 && inches < 12)
+			if(inches >= 0 ||  inches < 12)
 			{
 				weight = (feet - 5)*60 + inches * 5 + 110;
 			}//if
