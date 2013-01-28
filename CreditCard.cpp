@@ -8,6 +8,7 @@ int main()
 	int digit[8]; // to each digit
 	int evenSum = 0;//to store sum of even index elements 
 	int twice = 0;//to store doubled value
+	int twiceSum =0; // to store sum of twiced value
 	int onePlaceSum = 0;//sum of one place numbers
 	int tenPlaceSum =0;//sum of ten place numbers
 	int finalResult = 0;//to store addition
@@ -26,7 +27,7 @@ int main()
 	*digit. == calulate the sum of even index
 	*/
 	index = 0;
-	for(index = 0, index < 7; i+= 2)
+	for(index = 0; index < 7; index += 2)
 	{
 		evenSum += digit[index];
 		cout << "evenSum ="<< evenSum <<"\n" ;
@@ -43,19 +44,19 @@ int main()
 		twice = (int)(2*digit[index]);
 		tenPlaceSum = (int)twice/10;
 		onePlaceSum = (int)twice%10;
-		twiceSum += tenPlaceSum + onePlanceSum;
+		twiceSum += tenPlaceSum + onePlaceSum;
 	}
 	/*
 	*Determine whether the credit card is valid or not
 	*/
-	int finalResult = twiceSum + evenSum;
+	finalResult = twiceSum + evenSum;
 	if(finalResult % 10 == 0)
 	{
-		cout << "this credit card number is valied :" << cardNum; 
+		cout << "this credit card number is valied :" << cardNum <<endl;  
 	}
 	else 
 	{
-		cout << "this credit card in invalid :" << cardNum; 
+		cout << "this credit card in invalid :" << cardNum << endl; 
 	}
 	return 0;
 }//main
