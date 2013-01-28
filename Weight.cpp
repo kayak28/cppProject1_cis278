@@ -23,9 +23,12 @@ int main()
 			break;
 
 		case 5:
-			if(inches < 12 || inches > 0)
+			if(inches <= 12 &&  inches >= 0)
 			{
-				weight = 110 + 5 * inches; 
+				weight = 110 + 5 * inches;
+				cout << "your ideal wight is:"
+				     << weight 
+				     << "pound\n"; 
 	
 			}
 			break;	
@@ -33,11 +36,12 @@ int main()
 		case 7:
 		case 8:
 		case 9:	
-			if(inches < 12 || inches > 0)
+			if(inches <= 12 && inches >=  0)
 			{
-				weight = (feet - 5 )* 60 + inches * 5;
-				cout << "your ideal wight is: "  
-				     << "pounds";
+				weight = (feet - 5 )* 60 + inches * 5 + 110;
+				cout << "your ideal wight is: " 
+				     << weight 
+				     << "pounds\n";
 			}
 			break;
 		default:
