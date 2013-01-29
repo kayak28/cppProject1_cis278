@@ -65,6 +65,8 @@ int main()
 				cout << "this credit card in invalid :" << cardNum << endl; 
 			}	
 
+	
 		}//if
+	}//while
 	return 0;
 }//main
